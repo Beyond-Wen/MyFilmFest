@@ -2,9 +2,10 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
+
 exports.up = function (knex) {
   return knex.schema.createTable('dates', (table) => {
-    table.integer('showdate_id').primary()
+    table.increments('id').primary()
     table.string('date')
   })
 }
