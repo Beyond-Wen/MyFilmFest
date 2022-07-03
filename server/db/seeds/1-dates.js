@@ -6,34 +6,24 @@
 exports.seed = function (knex) {
   return knex('dates').insert([
     {
-      date: 'Friday 28th July',
+      dateDigit: '0728',
+      dayOfWeek: 'Friday',
+      dateMonth: '28th July',
     },
     {
-      date: 'Saturday 29th July',
+      dateDigit: '0729',
+      dayOfWeek: 'Saturday',
+      dateMonth: '29th July',
     },
     {
-      date: 'Sunday 30th July',
+      dateDigit: '0739',
+      dayOfWeek: 'Sunday',
+      dateMonth: '30th July',
     },
     {
-      date: 'Monday 1st August',
-    },
-    {
-      date: 'Tuesday 2nd August',
-    },
-    {
-      date: 'Wednesday 3rd August',
-    },
-    {
-      date: 'Thursday 4th August',
-    },
-    {
-      date: 'Friday 5th August',
-    },
-    {
-      date: 'Saturday 6th August',
-    },
-    {
-      date: 'Sunday 7th August',
+      dateDigit: '0801',
+      dayOfWeek: 'Monday',
+      dateMonth: '1st August',
     },
   ])
 }

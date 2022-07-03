@@ -11,10 +11,6 @@ exports.seed = function (knex) {
       length: '138 min',
       language: 'Korean',
       image: 'https://pbs.twimg.com/media/FQTALZNUcAQjw3d.jpg:large',
-      first_showdate_id: '1',
-      first_showtime: '4:30PM',
-      second_showdate_id: '8',
-      second_showtime: '8:30PM',
     },
     {
       name: 'Boy From Heaven',
@@ -23,10 +19,6 @@ exports.seed = function (knex) {
       language: 'Arabic',
       image:
         'https://pics.filmaffinity.com/Boy_from_Heaven-683653305-large.jpg',
-      first_showdate_id: '2',
-      first_showtime: '11:30AM',
-      second_showdate_id: '7',
-      second_showtime: '2:30PM',
     },
     {
       name: 'Close',
@@ -35,88 +27,48 @@ exports.seed = function (knex) {
       language: 'Dutch and French',
       image:
         'https://m.media-amazon.com/images/M/MV5BMDI0NDYyOTUtOWUyOS00OTFjLWIzY2MtMDk1YjdkNWMzOTBkXkEyXkFqcGdeQXVyODA0MjgyNzM@._V1_.jpg',
-      first_showdate_id: '1',
-      first_showtime: '2:30PM',
-      second_showdate_id: '7',
-      second_showtime: '9:00PM',
+    },
+    {
+      name: 'Triangle of Sadness',
+      director: 'Ruben Ostlund',
+      length: '150 min',
+      language: 'English',
+      image:
+        'https://d32qys9a6wm9no.cloudfront.net/images/movies/poster/e1/399e61e733acd7644ebe25cd455ec1f7_original.jpg?t=1655781914',
     },
   ])
 }
+
+//
 
 // {
 //   name:'',
 //   director:'',
 //   length:'',
 //   language:'',
-//   image:'',
-//   first_showdate_id:'',
-//   first_showtime:'',
-//   second_showdate_id:'',
-//   second_showtime:'',
-// },
-// {
+//   ima// {
 //   name:'',
 //   director:'',
 //   length:'',
 //   language:'',
-//   image:'',
-//   first_showdate:'',
-//   first_showtime:'',
-//   second_showdate:'',
-//   second_showtime:'',
-// },
-// {
+//   ima// {
 //   name:'',
 //   director:'',
 //   length:'',
 //   language:'',
-//   image:'',
-//   first_showdate:'',
-//   first_showtime:'',
-//   second_showdate:'',
-//   second_showtime:'',
-// },
-// {
+//   ima// {
 //   name:'',
 //   director:'',
 //   length:'',
 //   language:'',
-//   image:'',
-//   first_showdate:'',
-//   first_showtime:'',
-//   second_showdate:'',
-//   second_showtime:'',
-// },
-// {
+//   ima// {
 //   name:'',
 //   director:'',
 //   length:'',
 //   language:'',
-//   image:'',
-//   first_showdate:'',
-//   first_showtime:'',
-//   second_showdate:'',
-//   second_showtime:'',
-// },
-// {
+//   ima// {
 //   name:'',
 //   director:'',
 //   length:'',
 //   language:'',
-//   image:'',
-//   first_showdate:'',
-//   first_showtime:'',
-//   second_showdate:'',
-//   second_showtime:'',
-// },
-// {
-//   name:'',
-//   director:'',
-//   length:'',
-//   language:'',
-//   image:'',
-//   first_showdate:'',
-//   first_showtime:'',
-//   second_showdate:'',
-//   second_showtime:'',
-// },
+//   ima

@@ -2,13 +2,12 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-
 exports.up = function (knex) {
-  return knex.schema.createTable('dates', (table) => {
+  return knex.schema.createTable('events', (table) => {
     table.increments('id').primary()
-    table.integer('dateDigit')
-    table.string('dayOfWeek')
-    table.string('dateMonth')
+    table.integer('date_id').references('dates.id')
+    table.integer('movie_id').references('movies.id')
+    table.integer('time')
   })
 }
 
@@ -17,5 +16,5 @@ exports.up = function (knex) {
  * @returns { Promise<void> }
  */
 exports.down = function (knex) {
-  return knex.schema.dropTable('dates')
+  return knex.schema.dropTable('events')
 }
