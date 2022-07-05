@@ -10,10 +10,6 @@ exports.up = function (knex) {
     table.string('length')
     table.string('language')
     table.string('image')
-    // table.integer('first_showdate_id').references('dates.numberformat')
-    // table.string('first_showtime')
-    // table.integer('second_showdate_id').references('dates.numberformat')
-    // table.string('second_showtime')
   })
 }
 

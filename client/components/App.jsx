@@ -1,11 +1,11 @@
 import React from 'react'
+import Header from './Header'
 
 function App() {
   return (
     <>
-      <header className="header">
-        <h1>My Film Festival</h1>
-      </header>
+      <Header />
+      <br />
       <section className="main">{/* add your code here */}</section>
     </>
   )
