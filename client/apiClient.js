@@ -13,10 +13,11 @@ export function getAllMovies() {
     })
 }
 
-export function saveMovie(movie) {
+export function saveMovie(newMovie) {
   return request
     .post(url)
-    .send(movie)
+    .send(newMovie)
+    .set('Accept', 'application/json')
     .then((response) => {
       console.log('you added' + JSON.stringify(response.body))
     })
