@@ -1,18 +1,29 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './Header'
 import MovieCard from './MovieCard'
 import AddNewFilm from './AddNewFilm'
+import { getAllMovies } from '../apiClient'
 
 function App() {
-  const [movie, setMovie] = useState([])
+  const [movies, setMovies] = useState([])
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    getAllMovies()
+      .then((moviesData) => {
+        setMovies(moviesData)
+      })
+      .catch((err) => {
+        console.log(err.message)
+      })
+  }, [])
 
   return (
     <>
       <Header />
-      <br />
-      <section className="main">{/* add your code here */}</section>
+      {/* <br />
+      <section className="main">
+        <MovieCard />
+      </section> */}
     </>
   )
 }
