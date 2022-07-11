@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from './Header'
 import MovieCard from './MovieCard'
 import AddNewFilm from './AddNewFilm'
-import { getAllMovies } from '../apiClient'
+import { getAllMovies } from '../apis'
 
 function App() {
   const [movies, setMovies] = useState([])

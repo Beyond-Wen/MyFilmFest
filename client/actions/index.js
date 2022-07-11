@@ -1,1 +1,3 @@
-import * as api from '../apiClient'
+import * as api from '../apis'
+
+export const setMovies = { type: SET_MOVIES, payload: {} }

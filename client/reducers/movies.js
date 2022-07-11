@@ -2,6 +2,10 @@ import {} from '../actions/'
 
 const initialState = []
 
-function movies(state = initialState, action) {
+const moviesReducer(state = initialState, action) => {
+  const {type, payload} = action
+  
   return state
 }
+
+export default moviesReducer
