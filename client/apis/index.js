@@ -4,22 +4,21 @@ const url = '/api/v1/filmfest/'
 export function getAllMovies() {
   return request
     .get(url)
-    .then((response) => {
-      const movies = response.body
-      return movies
+    .then((res) => {
+      return res.body.movies
     })
     .catch((err) => {
       console.err(err.message)
     })
 }
 
-export function saveMovie(newMovie) {
+export function addNewMovie(newMovie) {
   return request
     .post(url)
-    .send(newMovie)
+    .send({ newMovie })
     .set('Accept', 'application/json')
-    .then((response) => {
-      console.log('you added' + JSON.stringify(response.body))
+    .then((res) => {
+      return res.body.movies
     })
     .catch((err) => {
       console.err(err.message)

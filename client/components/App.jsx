@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react'
-// import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import Header from './Header'
 import MovieCard from './MovieCard'
 // import AddNewFilm from './AddNewFilm'
 // import { getAllMovies } from '../apis'
+import { fetchMovies } from '../actions'
 
 function App() {
-  // const [movies, setMovies] = useState([])
+  const [newMovie, setNewMovies] = useState('')
+  const movies = useSelector((s) => s.movies)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(fetchMovies())
+  }, [])
 
   // useEffect(() => {
   //   getAllMovies()
