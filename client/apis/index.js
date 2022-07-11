@@ -5,7 +5,8 @@ export function getAllMovies() {
   return request
     .get(url)
     .then((res) => {
-      return res.body.movies
+      console.log('api', res.body)
+      return res.body
     })
     .catch((err) => {
       console.err(err.message)
@@ -18,7 +19,7 @@ export function addNewMovie(newMovie) {
     .send({ newMovie })
     .set('Accept', 'application/json')
     .then((res) => {
-      return res.body.movies
+      return res.body
     })
     .catch((err) => {
       console.err(err.message)

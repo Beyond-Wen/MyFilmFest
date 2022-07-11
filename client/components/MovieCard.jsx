@@ -1,23 +1,29 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
 
-export function MovieCard(props) {
-  const movies = useSelector((state) => state.movies)
-  const dispatch = useDispatch
+export default function MovieCard({ movieInfo }) {
+  console.log(movieInfo)
 
   return (
     <>
       <div className="moviecard">
         <ul>
-          <li>{props.movies.name}</li>
-          <li>{props.movies.director}</li>
-          <li>{props.movies.length}</li>
-          <li>{props.movies.language}</li>
+          <li>
+            Title: <b>{movieInfo.name}</b>
+          </li>
+          <li>
+            Director: <b>{movieInfo.director}</b>
+          </li>
+          <li>
+            Length: <b>{movieInfo.length}</b>
+          </li>
+          <li>
+            Language: <b>{movieInfo.language}</b>
+          </li>
         </ul>
         <div>
           <img
             className="movieimage"
-            src={props.movies.image}
+            src={movieInfo.image}
             alt="movie still shot"
           />
         </div>
