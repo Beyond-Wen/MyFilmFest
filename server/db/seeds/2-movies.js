@@ -18,7 +18,7 @@ exports.seed = function (knex) {
       length: '126 min',
       language: 'Arabic',
       image:
-        'https://pics.filmaffinity.com/Boy_from_Heaven-683653305-large.jpg',
+        'https://m.media-amazon.com/images/M/MV5BOTk5YWQyMGQtN2ViNi00MGRkLTgwMjgtODcwNTkwNTMwYmJkXkEyXkFqcGdeQXVyMTM5NTczMjkz._V1_.jpg',
     },
     {
       name: 'Close',

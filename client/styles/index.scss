@@ -1,3 +1,4 @@
+
 body {
   position: absolute;
   top: 0;
@@ -16,4 +17,47 @@ body {
 .headerImage {
   height: 180px;
   width: auto
+}
+
+
+
+
+
+
+
+//responsive
+/* Desktop / Laptop */
+@media (min-width: 768px) {
+  body {
+    font-size: 44px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 768px) {
+  body {
+    font-size: 32px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+  }
+}
+
+/* Phone */
+@media (min-width: 320px) and (max-width: 640px) {
+  body {
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+    background-color: white;
+    color: black;
+  }
 }
