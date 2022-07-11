@@ -2,7 +2,7 @@ export const RECEIVE_MOVIES = 'RECEIVE_MOVIES'
 export const SET_ERROR = 'SET_ERROR'
 export const SET_LOADING = 'SET_LOADING'
 
-import { getAllMovies, addNewMovie } from '../apis'
+import { getAllMovies } from '../apis'
 
 export const fetchMovies = () => {
   return (dispatch) => {

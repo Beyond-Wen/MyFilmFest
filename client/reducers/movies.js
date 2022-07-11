@@ -1,8 +1,8 @@
-import { RECEIVE_MOVIES, SET_ERROR, SET_LOADING } from '../actions/'
+import { RECEIVE_MOVIES } from '../actions/'
 
 const initialState = []
 
-const reducer = (state = initialState, action) => {
+const moviesReducer = (state = initialState, action) => {
   switch (action.type) {
     case RECEIVE_MOVIES:
       return action.movies
@@ -12,4 +12,4 @@ const reducer = (state = initialState, action) => {
   }
 }
 
-export default reducer
+export default moviesReducer
