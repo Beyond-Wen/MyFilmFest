@@ -15,7 +15,13 @@ export default function AddNewFilm() {
   const handleSubmit = (evt) => {
     evt.preventDefault()
     dispatch(addMovie(movieData))
-    setMovieData('')
+    setMovieData({
+      name: '',
+      director: '',
+      duration: '',
+      language: '',
+      image: '',
+    })
   }
 
   const handleChange = (evt) => {
