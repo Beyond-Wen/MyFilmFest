@@ -27,16 +27,16 @@ router.delete('/', (req, res) => {
     })
 })
 
-// router.post('/', (req, res) => {
-//   const newMovie = req.body
-//   db.saveMovie(newMovie)
-//     .then((ids) => {
-//       console.log(ids)
-//     })
-//     .catch((err) => {
-//       console.error(err.message)
-//       res.status(500).send('Server error')
-//     })
-// })
+router.post('/', (req, res) => {
+  const newMovie = req.body
+  db.saveMovie(newMovie)
+    .then((movies) => {
+      res.json(movies)
+    })
+    .catch((err) => {
+      console.error(err.message)
+      res.status(500).send('Server error')
+    })
+})
 
 module.exports = router

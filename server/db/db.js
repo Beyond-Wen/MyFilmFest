@@ -2,11 +2,11 @@ const environment = process.env.NODE_ENV || 'development'
 const config = require('./knexfile')[environment]
 const db = require('knex')(config)
 
-//GET
 function getAllMovies() {
   return db('movies').select()
 }
 
+//instead of returning numbers of entires deleted, the .then calls all movies again
 function deleteMovie(id) {
   return db('movies')
     .del()
@@ -14,13 +14,16 @@ function deleteMovie(id) {
     .then(() => getAllMovies())
 }
 
-// function saveMovie(movie) {
-//   return db('movies').insert(movie)
-// }
+//instead of the ids of entries added, the .then calls all movies again
+function saveMovie(movie) {
+  return db('movies')
+    .insert(movie)
+    .then(() => getAllMovies())
+}
 
 module.exports = {
   db,
   getAllMovies,
   deleteMovie,
-  // saveMovie,
+  saveMovie,
 }

@@ -3,19 +3,14 @@ export const SET_ERROR = 'SET_ERROR'
 export const SET_LOADING = 'SET_LOADING'
 export const DELETE_MOVIE = 'DELETE_MOVIE'
 
-import { getAllMovies, deleteMovieApi } from '../apis'
+import { getAllMovies, deleteMovieApi, addNewMovie } from '../apis'
 
 export const fetchMovies = () => {
   return (dispatch) => {
     dispatch(setLoading())
     return getAllMovies()
-      .then((movies) => {
-        dispatch(receiveMovies(movies))
-        return null
-      })
-      .catch((err) => {
-        dispatch(setError(err.message))
-      })
+      .then((movies) => dispatch(receiveMovies(movies)))
+      .catch((err) => dispatch(setError(err.message)))
   }
 }
 
@@ -43,8 +38,14 @@ export const deleteMovie = (id) => {
   return (dispatch) => {
     return deleteMovieApi(id)
       .then((movies) => dispatch(receiveMovies(movies)))
-      .catch((err) => {
-        dispatch(setError(err.message))
-      })
+      .catch((err) => dispatch(setError(err.message)))
+  }
+}
+
+export const addMovie = (newMovie) => {
+  return (dispatch) => {
+    return addNewMovie(newMovie)
+      .then((movies) => dispatch(receiveMovies(movies)))
+      .catch((err) => dispatch(setError(err.message)))
   }
 }
