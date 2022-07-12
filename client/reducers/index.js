@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux'
 
-// import stuff from './stuff'
+import errReducer from './errMessage'
+import loadingReducer from './loading'
+import moviesReducer from './movies'
 
 export default combineReducers({
-  // stuff
+  movies: moviesReducer,
+  errMessage: errReducer,
+  loading: loadingReducer,
 })

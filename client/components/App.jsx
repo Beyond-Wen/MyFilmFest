@@ -1,16 +1,14 @@
 import React from 'react'
+import Movies from './Movies'
+import Header from './Header'
 
-function App () {
+export default function App() {
   return (
     <>
-      <header className="header">
-        <h1>My Collection</h1>
-      </header>
+      <Header />
       <section className="main">
-        {/* add your code here */}
+        <Movies />
       </section>
     </>
   )
 }
-
-export default App
