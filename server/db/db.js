@@ -7,12 +7,20 @@ function getAllMovies() {
   return db('movies').select()
 }
 
-function saveMovie(movie) {
-  return db('movies').insert(movie)
+function deleteMovie(id) {
+  return db('movies')
+    .del()
+    .where('id', id)
+    .then(() => getAllMovies())
 }
+
+// function saveMovie(movie) {
+//   return db('movies').insert(movie)
+// }
 
 module.exports = {
   db,
   getAllMovies,
-  saveMovie,
+  deleteMovie,
+  // saveMovie,
 }

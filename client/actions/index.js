@@ -1,8 +1,9 @@
 export const RECEIVE_MOVIES = 'RECEIVE_MOVIES'
 export const SET_ERROR = 'SET_ERROR'
 export const SET_LOADING = 'SET_LOADING'
+export const DELETE_MOVIE = 'DELETE_MOVIE'
 
-import { getAllMovies } from '../apis'
+import { getAllMovies, deleteMovieApi } from '../apis'
 
 export const fetchMovies = () => {
   return (dispatch) => {
@@ -35,5 +36,15 @@ export const setError = (errMessage) => {
   return {
     type: SET_ERROR,
     errMessage,
+  }
+}
+
+export const deleteMovie = (id) => {
+  return (dispatch) => {
+    return deleteMovieApi(id)
+      .then((movies) => dispatch(receiveMovies(movies)))
+      .catch((err) => {
+        dispatch(setError(err.message))
+      })
   }
 }
