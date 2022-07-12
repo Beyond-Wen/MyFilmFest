@@ -14,7 +14,7 @@ export default function Movies() {
   }, [])
 
   return (
-    <div className="card">
+    <div className="cardContainer">
       {movies.map((movie) => {
         return <MovieCard key={movie.id} movieInfo={movie} />
       })}

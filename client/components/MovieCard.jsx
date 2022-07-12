@@ -5,7 +5,7 @@ export default function MovieCard({ movieInfo }) {
 
   return (
     <>
-      <div className="moviecard">
+      <div className="cardDiv">
         <ul>
           <li>
             Title: <b>{movieInfo.name}</b>
@@ -22,7 +22,7 @@ export default function MovieCard({ movieInfo }) {
         </ul>
         <div>
           <img
-            className="movieimage"
+            className="movieImage"
             src={movieInfo.image}
             alt="movie still shot"
           />

@@ -9,21 +9,43 @@ body {
 }
 
 .header {
+  display: flex;
   align-content: center;
   align-items: center;
   align-self: center;
+  padding: 20px;
+  margin: 20px;
 }
 
 .headerImage {
-  height: 180px;
-  width: auto
+  height: 250px;
+  width: auto;
+  margin: 20px;
 }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.cardDiv {
+  font-size: medium;
+  width: 250px;
+  height: 330 px;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 10px;
+  background-color: beige;
+  justify-content: center;
+}
 
-
-
-
+.movieImage {
+  width: 200px;
+  height: auto;
+  justify-items: center;
+  padding-left: 10%;
+}
 
 //responsive
 /* Desktop / Laptop */
