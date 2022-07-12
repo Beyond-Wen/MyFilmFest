@@ -7,7 +7,7 @@ exports.up = function (knex) {
     table.increments('id').primary()
     table.string('name')
     table.string('director')
-    table.string('length')
+    table.string('duration')
     table.string('language')
     table.string('image')
   })

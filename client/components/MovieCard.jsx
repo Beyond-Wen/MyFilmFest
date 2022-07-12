@@ -21,7 +21,7 @@ export default function MovieCard({ movieInfo }) {
             Director: <b>{movieInfo.director}</b>
           </li>
           <li>
-            Length: <b>{movieInfo.length}</b>
+            Duration: <b>{movieInfo.duration}</b>
           </li>
           <li>
             Language: <b>{movieInfo.language}</b>

@@ -1,7 +1,6 @@
 export const RECEIVE_MOVIES = 'RECEIVE_MOVIES'
 export const SET_ERROR = 'SET_ERROR'
 export const SET_LOADING = 'SET_LOADING'
-export const DELETE_MOVIE = 'DELETE_MOVIE'
 
 import { getAllMovies, deleteMovieApi, addNewMovie } from '../apis'
 

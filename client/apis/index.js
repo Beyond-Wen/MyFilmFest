@@ -24,7 +24,7 @@ export function deleteMovieApi(id) {
 export function addNewMovie(newMovie) {
   return request
     .post(url)
-    .send({ newMovie })
+    .send(newMovie)
     .set('Accept', 'application/json')
     .then((res) => res.body)
     .catch((err) => {

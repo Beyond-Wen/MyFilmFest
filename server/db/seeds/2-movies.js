@@ -8,14 +8,14 @@ exports.seed = function (knex) {
     {
       name: 'Decision to Leave',
       director: 'Park Chan-Wook',
-      length: '138 min',
+      duration: '138 min',
       language: 'Korean',
       image: 'https://pbs.twimg.com/media/FQTALZNUcAQjw3d.jpg:large',
     },
     {
       name: 'Boy From Heaven',
       director: 'Tarik Saleh',
-      length: '126 min',
+      duration: '126 min',
       language: 'Arabic',
       image:
         'https://m.media-amazon.com/images/M/MV5BOTk5YWQyMGQtN2ViNi00MGRkLTgwMjgtODcwNTkwNTMwYmJkXkEyXkFqcGdeQXVyMTM5NTczMjkz._V1_.jpg',
@@ -23,7 +23,7 @@ exports.seed = function (knex) {
     {
       name: 'Close',
       director: 'Lukas Dhont',
-      length: '105 min',
+      duration: '105 min',
       language: 'Dutch/French',
       image:
         'https://m.media-amazon.com/images/M/MV5BMDI0NDYyOTUtOWUyOS00OTFjLWIzY2MtMDk1YjdkNWMzOTBkXkEyXkFqcGdeQXVyODA0MjgyNzM@._V1_.jpg',
@@ -31,7 +31,7 @@ exports.seed = function (knex) {
     {
       name: 'Triangle of Sadness',
       director: 'Ruben Ostlund',
-      length: '150 min',
+      duration: '150 min',
       language: 'English',
       image:
         'https://d32qys9a6wm9no.cloudfront.net/images/movies/poster/e1/399e61e733acd7644ebe25cd455ec1f7_original.jpg?t=1655781914',
@@ -44,31 +44,31 @@ exports.seed = function (knex) {
 // {
 //   name:'',
 //   director:'',
-//   length:'',
+//   duration:'',
 //   language:'',
 //   ima// {
 //   name:'',
 //   director:'',
-//   length:'',
+//   duration:'',
 //   language:'',
 //   ima// {
 //   name:'',
 //   director:'',
-//   length:'',
+//   duration:'',
 //   language:'',
 //   ima// {
 //   name:'',
 //   director:'',
-//   length:'',
+//   duration:'',
 //   language:'',
 //   ima// {
 //   name:'',
 //   director:'',
-//   length:'',
+//   duration:'',
 //   language:'',
 //   ima// {
 //   name:'',
 //   director:'',
-//   length:'',
+//   duration:'',
 //   language:'',
 //   ima
