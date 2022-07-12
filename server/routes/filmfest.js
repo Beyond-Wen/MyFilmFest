@@ -15,11 +15,11 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {
-  const newMovie = req.body
-  db.saveMovie(newMovie)
-    .then((ids) => {
-      console.log(ids)
+router.delete('/', (req, res) => {
+  const id = req.body.id
+  db.deleteMovie(id)
+    .then((movies) => {
+      res.json(movies)
     })
     .catch((err) => {
       console.error(err.message)
@@ -27,15 +27,16 @@ router.post('/', (req, res) => {
     })
 })
 
-router.delete('/', (req, res) => {
-  const id = req.body.id
-  db.deleteMovie(id)
-    .then(() => {
-      res.sendStatus(200)
-    })
-    .catch((err) => {
-      console.error(err.message)
-      res.status(500).send('Server error')
-    })
-})
+// router.post('/', (req, res) => {
+//   const newMovie = req.body
+//   db.saveMovie(newMovie)
+//     .then((ids) => {
+//       console.log(ids)
+//     })
+//     .catch((err) => {
+//       console.error(err.message)
+//       res.status(500).send('Server error')
+//     })
+// })
+
 module.exports = router

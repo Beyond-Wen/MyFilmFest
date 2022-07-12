@@ -24,7 +24,7 @@ exports.seed = function (knex) {
       name: 'Close',
       director: 'Lukas Dhont',
       length: '105 min',
-      language: 'Dutch and French',
+      language: 'Dutch/French',
       image:
         'https://m.media-amazon.com/images/M/MV5BMDI0NDYyOTUtOWUyOS00OTFjLWIzY2MtMDk1YjdkNWMzOTBkXkEyXkFqcGdeQXVyODA0MjgyNzM@._V1_.jpg',
     },
