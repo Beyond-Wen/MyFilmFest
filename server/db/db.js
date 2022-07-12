@@ -11,8 +11,13 @@ function saveMovie(movie) {
   return db('movies').insert(movie)
 }
 
+function deleteMovie(id) {
+  return db('movies').del().where('id', id)
+}
+
 module.exports = {
   db,
   getAllMovies,
   saveMovie,
+  deleteMovie,
 }
