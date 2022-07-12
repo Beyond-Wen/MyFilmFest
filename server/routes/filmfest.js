@@ -27,8 +27,8 @@ router.post('/', (req, res) => {
     })
 })
 
-router.delete('/:id', (req, res) => {
-  const id = Number(req.params.id)
+router.delete('/', (req, res) => {
+  const id = req.body.id
   db.deleteMovie(id)
     .then(() => {
       res.sendStatus(200)
